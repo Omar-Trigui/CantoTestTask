@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.layout {
+  min-height: 100vh;
+  border-style: solid;
+}
+#rectangle {
+  width: 100px;
+  height: 100px;
+  background: white;
+  border-radius: 5px;
+}
