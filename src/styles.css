@@ -7,9 +7,15 @@ body {
   min-height: 100vh;
   border-style: solid;
 }
+
 #rectangle {
   width: 100px;
   height: 100px;
   background: white;
   border-radius: 5px;
+}
+@media (min-width: 2080px) and (max-width: 4096px) {
+  .titleHeader {
+    font-size: 41px !important;
+  }
 }

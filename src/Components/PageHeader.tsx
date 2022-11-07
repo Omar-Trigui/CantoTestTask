@@ -13,7 +13,7 @@ export const PageHeader = () => {
         justifyContent: "center",
       }}
     >
-      <Title level={3}>Poc approving Tool</Title>
+      <Title level={3} className="titleHeader">Poc approving Tool</Title>
     </Header>
   );
 };
