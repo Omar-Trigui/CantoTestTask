@@ -5,10 +5,10 @@ describe("SideBar", () => {
   beforeEach(() => {
     render(<App />);
   });
-  it("Should render the approve button on reder", () => {
+  it("Should render the approve button ", () => {
     expect(screen.getByText(/Approve/i).closest("button")).toBeTruthy();
   });
-  it("Should render the reject button on reder", () => {
+  it("Should render the reject button ", () => {
     expect(screen.getByText(/Reject/i).closest("button")).toBeTruthy();
   });
 });

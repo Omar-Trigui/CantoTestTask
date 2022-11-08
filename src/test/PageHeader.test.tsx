@@ -3,8 +3,7 @@ import App from "../App";
 
 describe("PageHeader", () => {
 
-
-  it("renders the app title", () => {
+  it("Should render the app title", () => {
     render(<App />);
     expect(screen.getByRole("heading").textContent).toEqual(
       "Poc approving Tool"
