@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { Button } from "./Button";
-import {Status} from "../types/types"
+import { Status } from "../types/types";
 
 interface props {
   onStatusChange: (status: Status) => void;
 }
+
+/**
+ * Contains the buttons in the  side layout component
+ */
+
 export const SideBarButton: React.FC<props> = ({ onStatusChange }) => {
   const [reset, setReset] = useState<boolean>(false);
 
@@ -13,16 +18,16 @@ export const SideBarButton: React.FC<props> = ({ onStatusChange }) => {
     setReset(!reset);
   };
 
+  const SIDE_BAR: React.CSSProperties = {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "flex-end",
+    marginTop: "10px",
+    height: "90%",
+  };
+
   return (
-    <div
-      style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "flex-end",
-        marginTop: "10px",
-        height: "90%",
-      }}
-    >
+    <div style={SIDE_BAR}>
       {reset ? (
         <Button handleClick={() => handleClick("RESET")} label={"Reset"} />
       ) : (
@@ -31,8 +36,8 @@ export const SideBarButton: React.FC<props> = ({ onStatusChange }) => {
             type="PRIMARY"
             handleClick={() => handleClick("APPROVE")}
             label={"Approve"}
-            />
-            <Button
+          />
+          <Button
             type="DANGER"
             handleClick={() => handleClick("REJECT")}
             label={"Reject"}

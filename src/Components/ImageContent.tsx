@@ -30,8 +30,9 @@ const iconMap = {
 const testImage = require("../assets/testimage.jpeg");
 
 /**
- * Render the main container
+ * Render the main content container
  */
+
 export const ImageContent: React.FC<Props> = ({ status }) => {
   return (
     <div style={CONTAINER}>
