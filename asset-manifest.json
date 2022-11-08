@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CantoTestTask/static/css/main.e9dd364b.css",
+    "main.js": "/CantoTestTask/static/js/main.c6bad098.js",
+    "static/media/testimage.jpeg": "/CantoTestTask/static/media/testimage.5e29645f6070fe68acc9.jpeg",
+    "index.html": "/CantoTestTask/index.html",
+    "static/media/close.svg": "/CantoTestTask/static/media/close.b8e9d2665ed4ec822007ddf9a98488c5.svg",
+    "static/media/check.svg": "/CantoTestTask/static/media/check.4ca5168ba520112714122eb7befa5561.svg",
+    "main.e9dd364b.css.map": "/CantoTestTask/static/css/main.e9dd364b.css.map",
+    "main.c6bad098.js.map": "/CantoTestTask/static/js/main.c6bad098.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9dd364b.css",
+    "static/js/main.c6bad098.js"
+  ]
+}
