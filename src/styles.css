@@ -1,11 +1,19 @@
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .layout {
-  min-height: 100vh;
-  border-style: solid;
+  min-height: 100vh ;
+  box-sizing: border-box;
+  border-width: thin !important;
+}
+.approveImage{
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
 }
 
 #rectangle {

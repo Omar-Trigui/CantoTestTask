@@ -21,9 +21,10 @@ export const SideBarButton: React.FC<props> = ({ onStatusChange }) => {
   const SIDE_BAR: React.CSSProperties = {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "flex-end",
-    marginTop: "10px",
-    height: "90%",
+    margin: "10px",
+    position: "absolute",
+    bottom: "30px",
+    width: "89%",
   };
 
   return (
@@ -37,11 +38,13 @@ export const SideBarButton: React.FC<props> = ({ onStatusChange }) => {
             handleClick={() => handleClick("APPROVE")}
             label={"Approve"}
           />
-          <Button
-            type="DANGER"
-            handleClick={() => handleClick("REJECT")}
-            label={"Reject"}
-          />
+          <div style={{ marginTop: "10px" }}>
+            <Button
+              type="DANGER"
+              handleClick={() => handleClick("REJECT")}
+              label={"Reject"}
+            />
+          </div>
         </>
       )}
     </div>

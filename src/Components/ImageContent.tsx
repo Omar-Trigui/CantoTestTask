@@ -11,7 +11,7 @@ const CONTAINER: React.CSSProperties = {
   position: "relative",
 };
 const ACTIONS: React.CSSProperties = {
-  right: "2em",
+  right: "4em",
   top: "1em",
   display: "block",
   position: "absolute",
@@ -19,7 +19,6 @@ const ACTIONS: React.CSSProperties = {
 const IMAGE: React.CSSProperties = {
   width: "100%",
   height: "100%",
-  padding: "10px",
 };
 
 const iconMap = {
@@ -38,19 +37,20 @@ export const ImageContent: React.FC<Props> = ({ status }) => {
     <div style={CONTAINER}>
       {status !== "RESET" && (
         <div style={ACTIONS}>
-          {
-            <div id="rectangle">
-              <img
-                src={iconMap[status]}
-                height={100}
-                width={100}
-                alt={`${status} icon`}
-              />
-            </div>
-          }
+          <div id="rectangle">
+            <img
+              src={iconMap[status]}
+              height={100}
+              width={100}
+              className={status === "APPROVE" ? "approveImage" : undefined}
+              alt={`${status} icon`}
+            />
+          </div>
         </div>
       )}
-      <img src={testImage} style={IMAGE} alt="testImage" />
+      <div style={{ margin: "35px", border: "1px solid black" }}>
+        <img src={testImage} style={IMAGE} alt="testImage" />
+      </div>
     </div>
   );
 };

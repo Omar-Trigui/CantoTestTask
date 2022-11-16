@@ -1,12 +1,12 @@
 import { render, screen } from "@testing-library/react";
-import App from "../App";
+import { PageHeader } from "../Components/PageHeader";
 
 describe("PageHeader", () => {
 
   it("Should render the app title", () => {
-    render(<App />);
+    render(<PageHeader />);
     expect(screen.getByRole("heading").textContent).toEqual(
-      "Poc approving Tool"
+      "PoC Approving Tool"
     );
   });
 });

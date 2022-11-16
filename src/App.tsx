@@ -7,7 +7,11 @@ import { Status } from "./types/types";
 import "./styles.css";
 const { Content } = Layout;
 
-const IMAGE_CONTAINER = { backgroundColor: "White", borderStyle: "solid" };
+const IMAGE_CONTAINER = {
+  backgroundColor: "White",
+  borderStyle: "solid",
+  borderWidth: "thin",
+};
 
 /**
  * Render a main layout component

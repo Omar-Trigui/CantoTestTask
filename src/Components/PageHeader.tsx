@@ -6,6 +6,7 @@ const { Header } = Layout;
 const HEADER: React.CSSProperties = {
   backgroundColor: "White",
   borderStyle: "solid",
+  borderWidth: "thin",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
@@ -19,7 +20,7 @@ export const PageHeader = () => {
   return (
     <Header style={HEADER}>
       <Title level={3} className="titleHeader">
-        Poc approving Tool
+        PoC Approving Tool
       </Title>
     </Header>
   );

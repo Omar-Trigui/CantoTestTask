@@ -11,6 +11,7 @@ interface props {
 const SIDER: React.CSSProperties = {
   backgroundColor: "White",
   borderStyle: "solid",
+  borderWidth: "thin",
 };
 
 /**

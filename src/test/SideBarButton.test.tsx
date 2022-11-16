@@ -1,9 +1,10 @@
 import { render, screen } from "@testing-library/react";
-import App from "../App";
+import { SideBarButton } from "../Components/SideBarButton";
 
 describe("SideBar", () => {
   beforeEach(() => {
-    render(<App />);
+    const mockSetState = jest.fn();
+    render(<SideBarButton onStatusChange={mockSetState} />);
   });
   it("Should render the approve button ", () => {
     expect(screen.getByText(/Approve/i).closest("button")).toBeTruthy();

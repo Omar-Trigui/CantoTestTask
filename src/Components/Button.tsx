@@ -7,8 +7,8 @@ interface Props {
 }
 
 const buttonColorsMap = {
-  PRIMARY: "green",
-  DANGER: "red",
+  PRIMARY: "#4ac865",
+  DANGER: "#fc0733",
 };
 
 /**
