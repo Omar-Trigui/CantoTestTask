@@ -20,6 +20,10 @@ const IMAGE: React.CSSProperties = {
   width: "100%",
   height: "100%",
 };
+const IMAGE_CONTAINER: React.CSSProperties = {
+  margin: "35px",
+  border: "1px solid black",
+};
 
 const iconMap = {
   APPROVE: Check,
@@ -48,7 +52,7 @@ export const ImageContent: React.FC<Props> = ({ status }) => {
           </div>
         </div>
       )}
-      <div style={{ margin: "35px", border: "1px solid black" }}>
+      <div style={IMAGE_CONTAINER}>
         <img src={testImage} style={IMAGE} alt="testImage" />
       </div>
     </div>
